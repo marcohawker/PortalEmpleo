@@ -10,7 +10,7 @@
 namespace PortalEmpleo {
     
     
-    public partial class ModificarCv {
+    public partial class CrearOfertaLaboral {
         
         /// <summary>
         /// Control form1.
@@ -22,157 +22,193 @@ namespace PortalEmpleo {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control Filaa.
+        /// Control fila1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Filaa;
+        protected global::System.Web.UI.WebControls.Panel fila1;
         
         /// <summary>
-        /// Control txt_rut.
+        /// Control txt_Titulo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_rut;
+        protected global::System.Web.UI.WebControls.TextBox txt_Titulo;
         
         /// <summary>
-        /// Control txt_clave.
+        /// Control txt_Area.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_clave;
+        protected global::System.Web.UI.WebControls.TextBox txt_Area;
         
         /// <summary>
-        /// Control Fila1.
+        /// Control fila2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila1;
+        protected global::System.Web.UI.WebControls.Panel fila2;
         
         /// <summary>
-        /// Control txt_Nombre.
+        /// Control txt_Vacantes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Nombre;
+        protected global::System.Web.UI.WebControls.TextBox txt_Vacantes;
         
         /// <summary>
-        /// Control txt_Apellido.
+        /// Control txt_Salario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Apellido;
+        protected global::System.Web.UI.WebControls.TextBox txt_Salario;
         
         /// <summary>
-        /// Control Fila2.
+        /// Control txt_SubArea.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila2;
+        protected global::System.Web.UI.WebControls.TextBox txt_SubArea;
         
         /// <summary>
-        /// Control txt_Telefono.
+        /// Control fila3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Telefono;
+        protected global::System.Web.UI.WebControls.Panel fila3;
         
         /// <summary>
-        /// Control txt_Direccion.
+        /// Control rdb_Jornada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Direccion;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_Jornada;
         
         /// <summary>
-        /// Control Fila3.
+        /// Control rdb_Movilidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila3;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_Movilidad;
         
         /// <summary>
-        /// Control txt_Email.
+        /// Control rdb_TipoTrabajo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Email;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_TipoTrabajo;
         
         /// <summary>
-        /// Control drp_EstadoCivil.
+        /// Control rdb_EducacionSuperior.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_EstadoCivil;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_EducacionSuperior;
         
         /// <summary>
-        /// Control Fila4.
+        /// Control fila4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila4;
+        protected global::System.Web.UI.WebControls.Panel fila4;
         
         /// <summary>
-        /// Control txt_UsrTipo.
+        /// Control txt_LugarDeTrabajo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_UsrTipo;
+        protected global::System.Web.UI.WebControls.TextBox txt_LugarDeTrabajo;
         
         /// <summary>
-        /// Control drp_Nacionalidad.
+        /// Control txt_DuracionOferta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_Nacionalidad;
+        protected global::System.Web.UI.WebControls.TextBox txt_DuracionOferta;
         
         /// <summary>
-        /// Control Fila5.
+        /// Control drp_TipoDeContrato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila5;
+        protected global::System.Web.UI.WebControls.DropDownList drp_TipoDeContrato;
         
         /// <summary>
-        /// Control cal_FechaNacimiento.
+        /// Control fila5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar cal_FechaNacimiento;
+        protected global::System.Web.UI.WebControls.Panel fila5;
+        
+        /// <summary>
+        /// Control txt_Puesto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_Puesto;
+        
+        /// <summary>
+        /// Control txt_DescripcionTrabajo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_DescripcionTrabajo;
+        
+        /// <summary>
+        /// Control registrar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel registrar;
+        
+        /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// Control btnCrear.
@@ -182,59 +218,5 @@ namespace PortalEmpleo {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCrear;
-        
-        /// <summary>
-        /// Control btnBuscar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscar;
-        
-        /// <summary>
-        /// Control btnActualizar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnActualizar;
-        
-        /// <summary>
-        /// Control btnEliminar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEliminar;
-        
-        /// <summary>
-        /// Control mensajeAccion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label mensajeAccion;
-        
-        /// <summary>
-        /// Control GridView1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
-        
-        /// <summary>
-        /// Control DatosPostulante.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DatosPostulante;
     }
 }
