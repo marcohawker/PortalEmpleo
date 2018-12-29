@@ -23,7 +23,7 @@ namespace PortalEmpleo.Models
 		private int Educacion;
 		private string Profesion;
 		//falta area de gusto
-		private bool JornadaPreferente;
+		private int JornadaPreferente;
 		private string Experiencia;
 		private string CartaPresentacion;
 
@@ -42,7 +42,7 @@ namespace PortalEmpleo.Models
 		public String fechaNacimiento { get => FechaNacimiento; set => FechaNacimiento = value; }
 		public int educacion { get => Educacion; set => Educacion = value; }
 		public string profesion { get => Profesion; set => Profesion = value; }
-		public bool jornadaPreferente { get => JornadaPreferente; set => JornadaPreferente = value; }
+		public int jornadaPreferente { get => JornadaPreferente; set => JornadaPreferente = value; }
 		public string experiencia { get => Experiencia; set => Experiencia = value; }
 		public string cartaPresentacion { get => CartaPresentacion; set => CartaPresentacion = value; }
 	}

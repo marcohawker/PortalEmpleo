@@ -53,6 +53,8 @@
 			<asp:Panel ID="registrar" runat="server">
 			<asp:Label ID="Label1" runat="server" Text="Acepto terminos y condiciones"></asp:Label>
 			<asp:Button ID="btnCrear" runat="server" Text="Registrar" OnClick="btnCrear_Click"/>
+				<asp:Button ID="btonmodificar" runat="server" Text="buscar" OnClick="btnModificar_Click"/>
+				<asp:Button ID="Button1" runat="server" Text="Actualiza" OnClick="btnActualizar_Click"/>
 				</asp:Panel>
 		</div>
     	

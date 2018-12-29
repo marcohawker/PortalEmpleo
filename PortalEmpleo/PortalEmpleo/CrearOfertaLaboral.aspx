@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
@@ -29,23 +30,23 @@
 			<asp:Panel ID="fila3" runat="server">
 				<asp:Label runat="server" Text="Tipo de jornada" TitleWidth="4" WebControl-Size="auto"></asp:Label>
 				<asp:RadioButtonList ID="rdb_Jornada" runat="server" TitleWidth="4" WebControl-Size="auto">
-					<asp:ListItem>Completa</asp:ListItem>
-					<asp:ListItem>Media</asp:ListItem>
+					<asp:ListItem Value="1">Completa</asp:ListItem>
+					<asp:ListItem Value="0">Media</asp:ListItem>
 				</asp:RadioButtonList>
 				<asp:Label runat="server" Text="Movilidad reducida" TitleWidth="4" WebControl-Size="auto"></asp:Label>
 				<asp:RadioButtonList ID="rdb_Movilidad" runat="server" TitleWidth="4" WebControl-Size="auto">
-					<asp:ListItem>Si</asp:ListItem>
-					<asp:ListItem>No</asp:ListItem>
+					<asp:ListItem Value="0">Si</asp:ListItem>
+					<asp:ListItem Value="1">No</asp:ListItem>
 				</asp:RadioButtonList>
 				<asp:Label runat="server" Text="Tipo Trabajo" TitleWidth="4" WebControl-Size="auto"></asp:Label>
 				<asp:RadioButtonList ID="rdb_TipoTrabajo" runat="server" TitleWidth="4" WebControl-Size="auto">
-					<asp:ListItem>Presencial</asp:ListItem>
-					<asp:ListItem>Remoto</asp:ListItem>
+					<asp:ListItem Value="0">Presencial</asp:ListItem>
+					<asp:ListItem Value="1">Remoto</asp:ListItem>
 				</asp:RadioButtonList>
 				<asp:Label runat="server" Text="Educacion Superior" TitleWidth="4" WebControl-Size="auto"></asp:Label>
 				<asp:RadioButtonList ID="rdb_EducacionSuperior" runat="server" TitleWidth="4" WebControl-Size="auto">
-					<asp:ListItem>Si</asp:ListItem>
-					<asp:ListItem>No</asp:ListItem>
+					<asp:ListItem Value="0">Si</asp:ListItem>
+					<asp:ListItem Value="1">No</asp:ListItem>
 				</asp:RadioButtonList>
 			</asp:Panel>
 			<asp:Panel ID="fila4" runat="server">

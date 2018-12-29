@@ -15,11 +15,16 @@ namespace PortalEmpleo.Models
 		/* create*/
 		public void CrearUsuario(usuario a)
 		{
-			String insert = "insert into UsuarioPostulante (UsrPRut, UsrPDir, UsrPFnac, UsrPNac) values('" + a.rut +
+			String insert = "insert into UsuarioPostulante values('" + a.rut +
 				"', '" + a.direccion +
 				"', '" + a.fechaNacimiento +
-				"', '" + a.nacionalidad +
-				"') insert into Usuario values ('" + a.rut +
+				"', '1', '1', '" + a.nacionalidad +
+				"', '" +a.estadoCivil+
+				"', '" +a.educacion+
+				"', '" +a.jornadaPreferente+
+				"', '1', '"+a.profesion+
+				"', '" +a.experiencia+
+				"', 'hab', '"+a.cartaPresentacion+"') insert into Usuario values ('" + a.rut +
 				"','" + a.clave +
 				"', '" + a.nombres +
 				"','" + a.apellidos +
@@ -44,7 +49,7 @@ namespace PortalEmpleo.Models
 			usuario a = null;
 
 			if (c.rs.Read())
-			{
+			{ //orden columnas bd
 				a = new usuario();
 				a.rut = c.rs.GetInt32(0);
 				a.clave = c.rs.GetString(1);
@@ -58,6 +63,14 @@ namespace PortalEmpleo.Models
 				a.direccion = c.rs.GetString(10);
 				//a.fechaNacimiento = c.rs.GetString(11);
 				a.nacionalidad = c.rs.GetInt32(14);
+				a.estadoCivil = c.rs.GetInt32(15);
+				a.educacion = c.rs.GetInt32(16);
+				a.profesion = c.rs.GetString(19);
+				a.experiencia = c.rs.GetString(20);
+				a.cartaPresentacion = c.rs.GetString(22);
+
+
+
 
 
 
@@ -68,12 +81,21 @@ namespace PortalEmpleo.Models
 		/* Update)*/
 		public void ActualizarUsuario(usuario a)
 		{
-			String update = "update Usuario set UsrClave='" + a.clave +
+			String update = "  update [PortalEmpleo].[dbo].[Usuario] set UsrClave='" + a.clave +
 				"', UsrNombre='" + a.nombres +
 				"', UsrApellido='" + a.apellidos +
-				"',UsrTelefono='" + a.telefono +
-				"',UsrEstado='" + a.estadoCivil +
-				"' where UsrRut='" + a.rut + "'";
+				"', UsrTelefono='" + a.telefono +
+				"', UsrEstado='" + a.estadoCivil +
+				"' where UsrRut='" + a.rut + "' update [PortalEmpleo].[dbo].[UsuarioPostulante] set UsrPDir='" + a.direccion +
+				"', UsrPFnac='" + a.fechaNacimiento +
+				"', UsrPNac='" + a.nacionalidad +
+				"', UsrPECivil='" + a.estadoCivil +
+				"', UsrPEdu='" + a.educacion +
+				"', UsrPJor='" + a.jornadaPreferente +
+				"', UsrPProficio='" + a.profesion +
+				"', UsrPExpLab='" + a.experiencia +
+				"', UsrPRCV='" + a.cartaPresentacion + 
+				"' where UsrPRut = '" + a.rut + "'";
 			Ejecutar(update);
 		}
 		/* Borrar*/
@@ -85,14 +107,46 @@ namespace PortalEmpleo.Models
 		}
 		public void CrearEmpresa(Empresa e)
 		{
-			String creaEmpresa = "insert into [PortalEmpleo].[dbo].[Empresa] values ("+e.idEmpresa+", '"+e.razonSocial+"', 'direcccion1', 'www.empresa1.cl', 'rubro1', 'com1')";
+			String creaEmpresa = "insert into [PortalEmpleo].[dbo].[Empresa] values ("+e.idEmpresa+", '"+e.razonSocial+"', 'direcccion1', 'www.empresa1.cl', 'rubro1', 'com1', 7777)";
 			Ejecutar(creaEmpresa);
 		}
-		public void CrearOfertaEmpleo(Empresa e)
+		public Empresa BuscarEmpresa(string idEmpresa)
 		{
-			//string insert= "insert into[PortalEmpleo].[dbo].[OfertaLaboral] values(1234, 8888, 'oferta1', 'puesto1', 4444, 4441, 'descripcion1',
- //'ubicqacion1', 3, GETDATE(), GETDATE(), 1, 400000, 1, 1, 1, 1110, 1)";
+			String select = "select * from Empresa t where EmpRut='" + idEmpresa + "'";
+			c.con.Open();
+			c.sen = new System.Data.SqlClient.SqlCommand(select, c.con);
+			c.rs = c.sen.ExecuteReader();
 
+			Empresa a = null;
+			if (c.rs.Read())
+			{ //orden columnas bd
+				a = new Empresa();
+				a.idEmpresa = c.rs.GetString(0);
+				a.razonSocial= c.rs.GetString(1);
+				//direccionn
+				//web
+				//rubro
+				//com
+
+
+
+
+
+
+			}
+			c.con.Close();
+			return a;
+		}
+		public void ActualizarEmpresa(Empresa e)
+		{
+			String update = "update [PortalEmpleo].[dbo].[Empresa] set EmpRSocial='" + e.razonSocial +
+				"' where EmpRut='" + e.idEmpresa + "'";
+			Ejecutar(update);
+		}
+			public void CrearOfertaEmpleo(Empresa e)
+		{
+			string creaOferta= "insert into [PortalEmpleo].[dbo].[OfertaLaboral] values ('rutEmp1', "+e.tituloOferta+", "+e.puesto+", 1, 1, "+e.descripcionOferta+", "+e.ubicacion+", "+e.numeroVacantes+", GETDATE(), GETDATE(), 1, "+e.salario+", "+e.jornadraLaboral+", "+e.movilidadRequerida+", "+e.educacionRequerida+", "+e.tipoDeContrato+", 1)";
+			Ejecutar(creaOferta);
 		}
 		public void BuscarOfertaEmpleo(int IdOfertaEmpleo)
 		{

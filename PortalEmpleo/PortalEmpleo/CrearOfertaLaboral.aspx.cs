@@ -18,14 +18,15 @@ namespace PortalEmpleo
 		{
 			Empresa u = new Empresa();
 			u.tituloOferta = txt_Titulo.Text;
+			u.puesto= txt_Titulo.Text;
 			u.area = Int32.Parse(txt_Area.Text);
 			u.subArea = Int32.Parse(txt_SubArea.Text);
 			u.numeroVacantes = Int32.Parse(txt_Vacantes.Text);
 			u.salario = Int32.Parse(txt_Salario.Text);
-			//u.jornadraLaboral = rdb_Jornada.SelectedValue(true);
-			//u.movilidadRequerida = rdb_Movilidad.SelectedValue(true);
-			//u.tipoTrabajo = rdb_TipoTrabajo.SelectedValue(true);
-			//u.educacionRequerida = rdb_EducacionSuperior.SelectedValue(true);
+			u.jornadraLaboral = Int32.Parse(rdb_Jornada.SelectedValue);
+			u.movilidadRequerida = Int32.Parse(rdb_Movilidad.SelectedValue);
+			u.tipoTrabajo = Int32.Parse(rdb_TipoTrabajo.SelectedValue);
+			u.educacionRequerida = Int32.Parse(rdb_EducacionSuperior.SelectedValue);
 			u.ubicacion = txt_LugarDeTrabajo.Text;
 			u.fechaFin = txt_DuracionOferta.Text;
 			u.tipoDeContrato = Int32.Parse(drp_TipoDeContrato.Text);

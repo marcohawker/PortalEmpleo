@@ -9,7 +9,7 @@ namespace PortalEmpleo.Models
 	{
 		//oferta laboral
 		private int IdOferta;
-		private int IdEmpresa;//foranea
+		private string IdEmpresa;//foranea
 		private string TituloOferta;
 		private string Puesto;
 		private int Area;//foranea
@@ -20,10 +20,10 @@ namespace PortalEmpleo.Models
 		private string FechaFin;
 		private int TipoDeContrato;
 		private int Salario;
-		//falta bool tipo de trabajo(remoto, presencial)
-		private bool JornadraLaboral;
-		private bool MovilidadRequerida;
-		private bool EducacionRequerida;
+		private int TipoTrabajo;
+		private int JornadraLaboral;
+		private int MovilidadRequerida;
+		private int EducacionRequerida;
 		private int Estado;
 
 		//crear empresa ID Empresa Yaa definido
@@ -39,7 +39,7 @@ namespace PortalEmpleo.Models
 
 		//oferta empleo
 		public int idOferta { get => IdOferta; set => IdOferta = value; }
-		public int idEmpresa { get => IdEmpresa; set => IdEmpresa = value; }
+		public string idEmpresa { get => IdEmpresa; set => IdEmpresa = value; }
 		public string tituloOferta { get => TituloOferta; set => TituloOferta = value; }
 		public string puesto { get => Puesto; set => Puesto = value; }
 		public int area { get => Area; set => Area = value; }
@@ -50,10 +50,10 @@ namespace PortalEmpleo.Models
 		public string fechaFin { get => FechaFin; set => FechaFin = value; }
 		public int tipoDeContrato { get => TipoDeContrato; set => TipoDeContrato = value; }
 		public int salario { get => Salario; set => Salario = value; }
-		//aca el que falte
-		public bool jornadraLaboral { get => JornadraLaboral; set => JornadraLaboral = value; }
-		public bool movilidadRequerida { get => MovilidadRequerida; set => MovilidadRequerida = value; }
-		public bool educacionRequerida { get => EducacionRequerida; set => EducacionRequerida = value; }
+		public int tipoTrabajo { get => TipoTrabajo; set => TipoTrabajo = value; }
+		public int jornadraLaboral { get => JornadraLaboral; set => JornadraLaboral = value; }
+		public int movilidadRequerida { get => MovilidadRequerida; set => MovilidadRequerida = value; }
+		public int educacionRequerida { get => EducacionRequerida; set => EducacionRequerida = value; }
 		public int estado { get => Estado; set => Estado = value; }
 
 
@@ -66,5 +66,6 @@ namespace PortalEmpleo.Models
 		public string tuApellido { get => TuApellido; set => TuApellido = value; }
 		public int telefono { get => Telefono; set => Telefono = value; }
 		public string usrTipo { get => UsrTipo; set => UsrTipo = value; }
+		
 	}
 }
