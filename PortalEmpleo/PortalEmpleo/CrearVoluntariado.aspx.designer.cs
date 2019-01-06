@@ -22,211 +22,193 @@ namespace PortalEmpleo {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control Filaa.
+        /// Control fila1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Filaa;
+        protected global::System.Web.UI.WebControls.Panel fila1;
         
         /// <summary>
-        /// Control txt_rut.
+        /// Control txt_Titulo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_rut;
+        protected global::System.Web.UI.WebControls.TextBox txt_Titulo;
         
         /// <summary>
-        /// Control txt_clave.
+        /// Control txt_Area.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_clave;
+        protected global::System.Web.UI.WebControls.TextBox txt_Area;
         
         /// <summary>
-        /// Control Fila1.
+        /// Control fila2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila1;
+        protected global::System.Web.UI.WebControls.Panel fila2;
         
         /// <summary>
-        /// Control txt_Nombre.
+        /// Control txt_Vacantes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Nombre;
+        protected global::System.Web.UI.WebControls.TextBox txt_Vacantes;
         
         /// <summary>
-        /// Control txt_Apellido.
+        /// Control txt_VacantesDisponibles.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Apellido;
+        protected global::System.Web.UI.WebControls.TextBox txt_VacantesDisponibles;
         
         /// <summary>
-        /// Control Fila2.
+        /// Control txt_SubArea.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila2;
+        protected global::System.Web.UI.WebControls.TextBox txt_SubArea;
         
         /// <summary>
-        /// Control txt_Telefono.
+        /// Control fila3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Telefono;
+        protected global::System.Web.UI.WebControls.Panel fila3;
         
         /// <summary>
-        /// Control txt_Direccion.
+        /// Control rdb_Jornada.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Direccion;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_Jornada;
         
         /// <summary>
-        /// Control Fila3.
+        /// Control rdb_Movilidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila3;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_Movilidad;
         
         /// <summary>
-        /// Control txt_Email.
+        /// Control rdb_TipoVoluntariado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Email;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_TipoVoluntariado;
         
         /// <summary>
-        /// Control drp_EstadoCivil.
+        /// Control rdb_EducacionSuperior.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_EstadoCivil;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdb_EducacionSuperior;
         
         /// <summary>
-        /// Control Fila4.
+        /// Control Panel1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila4;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// Control txt_UsrTipo.
+        /// Control cal_FechaFin.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_UsrTipo;
+        protected global::System.Web.UI.WebControls.Calendar cal_FechaFin;
         
         /// <summary>
-        /// Control drp_Nacionalidad.
+        /// Control fila4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_Nacionalidad;
+        protected global::System.Web.UI.WebControls.Panel fila4;
         
         /// <summary>
-        /// Control Fila5.
+        /// Control txt_LugarDeVoluntariado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Fila5;
+        protected global::System.Web.UI.WebControls.TextBox txt_LugarDeVoluntariado;
         
         /// <summary>
-        /// Control cal_FechaNacimiento.
+        /// Control txt_DuracionOferta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar cal_FechaNacimiento;
+        protected global::System.Web.UI.WebControls.TextBox txt_DuracionOferta;
         
         /// <summary>
-        /// Control drp_Educacion.
+        /// Control drp_TipoDeContrato.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_Educacion;
+        protected global::System.Web.UI.WebControls.DropDownList drp_TipoDeContrato;
         
         /// <summary>
-        /// Control drp_Profesion.
+        /// Control fila5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_Profesion;
+        protected global::System.Web.UI.WebControls.Panel fila5;
         
         /// <summary>
-        /// Control drp_JornadaPreferida.
+        /// Control txt_Puesto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drp_JornadaPreferida;
+        protected global::System.Web.UI.WebControls.TextBox txt_Puesto;
         
         /// <summary>
-        /// Control FilaTexto.
+        /// Control txt_DescripcionVoluntariado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel FilaTexto;
-        
-        /// <summary>
-        /// Control txt_Experiencia.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Experiencia;
-        
-        /// <summary>
-        /// Control txt_Presentacion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_Presentacion;
+        protected global::System.Web.UI.WebControls.TextBox txt_DescripcionVoluntariado;
         
         /// <summary>
         /// Control registrar.
