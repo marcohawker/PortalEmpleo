@@ -161,6 +161,24 @@ namespace PortalEmpleo.Models
 
 		}
 
+		public void CrearOfertaVoluntariado(Voluntariado e)
+		{
+			string creaOferta = "insert into [PortalEmpleo].[dbo].[Voluntariado] values ( 7777, '"+e.volTitulo+
+				"', '"+e.volpuesto+
+				"', "+e.volarea+
+				", "+e.volsubarea+
+				", '"+e.voldesc+
+				"', '"+e.volugar+
+				"', "+e.volvac+
+				","+e.volvacdisp+
+				", GETDATE(), '"+e.volfechafin+
+				"', "+e.voljornada+
+				", "+e.volmov+
+				", "+e.volTcontrato+
+				", "+e.voledu+
+				", 1)";
+			Ejecutar(creaOferta);
+		}
 		private void Ejecutar(String ConsultaSql)// la base de las funciones
 		{
 			c.con.Open();
