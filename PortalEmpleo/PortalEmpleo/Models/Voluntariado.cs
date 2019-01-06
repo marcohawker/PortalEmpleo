@@ -11,36 +11,36 @@ namespace PortalEmpleo.Models
 		private int VolAutorID;
 		private string VolTitulo;
 		private string Volpuesto;
-		private int volarea;
-		private int volsubarea;
-		private string voldesc;
-		private string volugar;
-		private int volvac;
-		private int volvacdisp;
-		private DateTime volfechainic;
-		private DateTime volfechafin;
-		private bool voljornada;
-		private bool volmov;
+		private int Volarea;
+		private int Volsubarea;
+		private string Voldesc;
+		private string Volugar;
+		private int Volvac;
+		private int Volvacdisp;
+		private DateTime Volfechainic;
+		private String Volfechafin;
+		private int Voljornada;
+		private int Volmov;
 		private int VolTcontrato;
-		private bool Voledu;
-		private int volestado;
+		private int Voledu;
+		private int Volestado;
 
-		public int VolID1 { get => VolID; set => VolID = value; }
-		public int VolAutorID1 { get => VolAutorID; set => VolAutorID = value; }
-		public string VolTitulo1 { get => VolTitulo; set => VolTitulo = value; }
-		public string Volpuesto1 { get => Volpuesto; set => Volpuesto = value; }
-		public int Volarea { get => volarea; set => volarea = value; }
-		public int Volsubarea { get => volsubarea; set => volsubarea = value; }
-		public string Voldesc { get => voldesc; set => voldesc = value; }
-		public string Volugar { get => volugar; set => volugar = value; }
-		public int Volvac { get => volvac; set => volvac = value; }
-		public int Volvacdisp { get => volvacdisp; set => volvacdisp = value; }
-		public DateTime Volfechainic { get => volfechainic; set => volfechainic = value; }
-		public DateTime Volfechafin { get => volfechafin; set => volfechafin = value; }
-		public bool Voljornada { get => voljornada; set => voljornada = value; }
-		public bool Volmov { get => volmov; set => volmov = value; }
-		public int VolTcontrato1 { get => VolTcontrato; set => VolTcontrato = value; }
-		public bool Voledu1 { get => Voledu; set => Voledu = value; }
-		public int Volestado { get => volestado; set => volestado = value; }
+		public int volID { get => VolID; set => VolID = value; }
+		public int volAutorID { get => VolAutorID; set => VolAutorID = value; }
+		public string volTitulo { get => VolTitulo; set => VolTitulo = value; }
+		public string volpuesto { get => Volpuesto; set => Volpuesto = value; }
+		public int volarea { get => Volarea; set => Volarea = value; }
+		public int volsubarea { get => Volsubarea; set => Volsubarea = value; }
+		public string voldesc { get => Voldesc; set => Voldesc = value; }
+		public string volugar { get => Volugar; set => Volugar = value; }
+		public int volvac { get => Volvac; set => Volvac = value; }
+		public int volvacdisp { get => Volvacdisp; set => Volvacdisp = value; }
+		public DateTime volfechainic { get => Volfechainic; set => Volfechainic = value; }
+		public String volfechafin { get => Volfechafin; set => Volfechafin = value; }
+		public int voljornada { get => Voljornada; set => Voljornada = value; }
+		public int volmov { get => Volmov; set => Volmov = value; }
+		public int volTcontrato { get => VolTcontrato; set => VolTcontrato = value; }
+		public int voledu { get => Voledu; set => Voledu = value; }
+		public int volestado { get => Volestado; set => Volestado = value; }
 	}
 }
